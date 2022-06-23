@@ -1,0 +1,51 @@
+body {
+  border: 1px solid;
+  padding: 10px;
+  width: 600px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.flag {
+  width: 100px;
+  border-radius: 5px;
+}
+.country {
+  text-align: center;
+  height: 66px;
+  padding: 8px;
+}
+.day {
+  margin-top: 5px;
+  color: #343a40;
+}
+
+.icon {
+  font-size: 45px;
+  display: block;
+  color: darkblue;
+  text-align: center;
+}
+.weather {
+  font-size: 60px;
+  font-weight: bold;
+}
+.ctof {
+  font-size: 15px;
+  display: inline;
+}
+.humidity {
+  text-align: center;
+  padding-top: 15px;
+  color: #5c606d;
+}
+.quote {
+  display: block;
+  text-align: center;
+  font-style: italic;
+}
+.weekday {
+  text-decoration: underline;
+}
+.footer {
+  text-align: center;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week2</title>
+    <link rel="stylesheet" href="scr/style.css" class="css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/3e534fbdb7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <img
+            src="img/Flag_of_Ukraine.svg.png"
+            alt="flag"
+            class="flag"
+            id="flag"
+          />
+        </div>
+        <div class="col-7">
+          <div class="shadow-sm rounded country" id="differentCity">
+            <h1>Kyiv, Ukraine</h1>
+          </div>
+        </div>
+        <div>
+          <button type="submit" class="btn btn-success mt-3" id="current-city">
+            Current
+          </button>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col enter">
+          <form class="form-inline" id="search">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="inputCity"
+                placeholder="Enter your city"
+              />
+            </div>
+            <button type="submit" class="btn btn-outline-dark ml-1">OK</button>
+          </form>
+        </div>
+        <div class="col">
+          <form class="form-inline">
+            <div class="form-group">
+              <input type="date" class="form-control" id="inputDate" />
+            </div>
+            <button type="submit" class="btn btn-outline-dark ml-1">
+              Change
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p class="day" id="currenttime">11 pm, Monday</p>
+          <i class="fa-solid fa-cloud-sun icon"></i>
+        </div>
+        <div class="col weather" id="temp">
+          <span id="tempC">22</span>
+          <div class="ctof">
+            <a href="" id="celcius"> °C</a> |<a href="" id="fahr">°F</a>
+          </div>
+        </div>
+        <div class="col">
+          <p class="humidity" id="humid">Humidity 28%</p>
+          <q class="quote">Weather forecast for tonight: dark.</q>
+        </div>
+      </div>
+      <div class="row shadow p-3 bg-white rounded mt-3">
+        <div class="col-2">
+          <p>
+            <span class="weekday">Tuesday</span>
+            22°C⛅
+          </p>
+        </div>
+        <div class="col-2">
+          <p>
+            <span class="weekday">Wednesday</span>
+            22°C🌥
+          </p>
+        </div>
+        <div class="col-2 footer">
+          <p>
+            <span class="weekday">Thursday</span>
+            22°C🌦
+          </p>
+        </div>
+        <div class="col-2">
+          <p>
+            <span class="weekday">Friday</span>
+            22°C⛈
+          </p>
+        </div>
+        <div class="col-2">
+          <p>
+            <span class="weekday">Saturday</span>
+            22°C🌩
+          </p>
+        </div>
+        <div class="col-2">
+          <p>
+            <span class="weekday">Sunday</span>
+            22°C🌥
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
