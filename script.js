@@ -26,6 +26,7 @@ function changeToCurrentCity(event) {
     let lon = Math.round(position.coords.longitude);
     let apiKey = "4bef2345e330426bc02f380640dec5ea";
     let weatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+    console.log(weatherURL);
     function Weather(responce) {
       let city = responce.data.name;
       let country = responce.data.sys.country.toLowerCase();

@@ -1,4 +1,4 @@
-body {
+.container {
   border: 1px solid;
   padding: 10px;
   width: 600px;
@@ -48,4 +48,14 @@ body {
 }
 .footer {
   text-align: center;
+}
+.coddedby {
+  font-family: cursive;
+  text-align: center;
+}
+.gitlink {
+  color: hotpink;
+}
+.gitlink:hover {
+  color: pink;
 }
