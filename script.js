@@ -17,6 +17,7 @@ function changeCity(event) {
   console.log(cityName);
   let apiKey = "4bef2345e330426bc02f380640dec5ea";
   cityURL = `https:api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
+  console.log(cityURL);
   axios.get(cityURL).then(TempCity);
 }
 function changeToCurrentCity(event) {
